@@ -1,0 +1,241 @@
+@import url('./index.css');
+
+/* Custom Styles */
+
+header{
+  box-shadow: 4px 4px 8px rgba(0,0,0,.5);
+}
+
+.links{
+  border: 2px solid rgb(0,82,136);
+  color:rgb(0,82,136);
+  font-weight: 700;
+  border-radius: .2rem;
+  padding: .75rem 1rem;
+  margin: 2rem;
+  margin-top:  10rem;
+}
+
+.links2{
+  border: 2px solid rgb(0,82,136);
+  color:rgb(0,82,136);
+  font-weight: 700;
+  border-radius: .2rem;
+  padding: .75rem 1rem;
+}
+
+
+form{
+  border: 1px solid rgb(0,82,136);
+  width: 40%;
+  margin:0 auto;
+  margin-top: 4rem;
+  padding: 1rem;
+}
+form h2{
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: rgb(0,82,136);
+}
+
+form label{
+  display: block;
+  color: rgb(0,82,136);
+  width: 100%;
+  margin-bottom:1rem ;
+}
+
+form input{
+  display: block;
+  width: 100%;
+   height: 2rem;
+   margin-bottom:.25rem ;
+}
+
+form span{
+  display: block;
+  font-size: .9rem;
+  color: red;
+  margin-bottom:1rem ;
+}
+
+form .btn{
+  color: rgb(0,82,136);
+  border:1px solid rgb(0,82,136);
+}
+
+
+.back-to-home{
+  padding: 1rem;
+}
+
+.back-to-home .login{
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: rgb(0,82,136);
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+.back-to-home .back{
+  color: rgb(0,82,136);
+  border:1px solid rgb(0,82,136); 
+  display: inline-block;
+  padding: .25rem 1rem;
+  border-radius: .2rem; 
+}
+
+.notFound .error-page{
+  text-align: center;
+  font-size: 3.2rem;
+  color: rgb(0,82,136);
+  margin-top: 2rem;
+}
+
+.dashboard-head {
+  margin-top: 1rem;
+  text-align: right;
+  padding:1rem ;
+}
+
+.dashboard-head i{
+  font-size: 1rem;
+  color: rgb(40, 40, 40);
+}
+
+.dashboard-head select{
+  margin-left: .5rem;
+  border:none;
+   background-color:white;
+   outline: none;
+} 
+
+table{
+  border-radius: .2rem;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+ table th{
+  padding:.5rem ;
+  width: 200px;
+  background-color: rgb(163, 187, 204);
+  text-align: left;
+}
+
+table td{
+  padding:.5rem ;
+  width: 200px;
+}
+
+table td{
+  font-size: .9rem;
+}
+
+
+table .span{
+     border-radius: .75rem;
+     display: inline-block;
+     width: 5rem;
+     padding: .2rem .5rem;
+     border:1px solid black ;
+     text-align: center;
+     font-weight: 600;
+}
+
+
+
+table .upcoming{
+  color: orange;
+  border-color: orange;
+  background-color: rgba(255, 165, 0, .1);
+}
+
+table .success{
+  color: green;
+  border-color: green;
+  background-color: rgba(0, 128, 0, .1);
+}
+
+table .failure{
+   color: red;
+   border-color:red ;
+   background-color: rgba(255, 0, 0, .1);
+}
+
+
+.page-butt{
+  border:1px solid rgb(77, 76, 76) ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.6rem;
+  height: 2.6rem;
+
+}
+
+.page-act{
+  background-color: rgb(163, 187, 204);
+}
+
+.page-btn:hover{
+  background-color: rgb(163, 187, 204);
+  cursor: pointer;
+}
+.page-left{
+   border-bottom-left-radius: .2rem;
+   border-top-left-radius: .2rem;
+}
+
+.page-right{
+  border-bottom-right-radius: .2rem;
+  border-top-right-radius: .2rem;
+}
+
+/* Loader */
+
+.loader{
+  height: 30rem;
+}
+
+.loader p{
+  color:rgb(0,82,136);
+}
+
+.ripple-loader {
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+
+.ripple-loader div {
+  position: absolute;
+  border: 4px solid rgb(0,82,136);
+  border-radius: 50%;
+  animation: ripple-loader 1s ease-out infinite;
+}
+
+.ripple-loader div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+
+@keyframes ripple-loader {
+  0% {
+    top: 32px;
+    left: 32px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0;
+    left: 0;
+    width: 64px;
+    height: 64px;
+    opacity: 0;
+  }
+}

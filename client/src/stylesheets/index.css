@@ -1,0 +1,410 @@
+/* ./src/index.css */
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+
+/* http://meyerweb.com/eric/tools/css/reset/V2.0 | 20110126 License: none (public domain) */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Flex */
+.flex {
+  display: flex;
+}
+
+/* Justify Content */
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+/* Align Items */
+.align-start {
+  align-items: flex-start;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-stretch {
+  align-items: stretch;
+}
+
+.align-baseline {
+  align-items: baseline;
+}
+
+/* Align Content */
+.align-content-start {
+  align-content: flex-start;
+}
+
+.align-content-end {
+  align-content: flex-end;
+}
+
+.align-content-center {
+  align-content: center;
+}
+
+.align-content-stretch {
+  align-content: stretch;
+}
+
+.align-content-around {
+  align-content: space-around;
+}
+
+.align-content-between {
+  align-content: space-between;
+}
+
+/* Flex Wrap */
+.flex-wrap-yes {
+  flex-wrap: wrap;
+}
+
+.flex-wrap-no {
+  flex-wrap: nowrap;
+}
+
+.flex-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+/* Flex Direction */
+.flex-direction-column {
+  flex-direction: column;
+}
+
+.flex-direction-column-reverse {
+  flex-direction: column-reverse;
+}
+
+.flex-direction-row {
+  flex-direction: row;
+}
+
+.flex-direction-row-reverse {
+  flex-direction: row-reverse;
+}
+
+/* Align Self */
+.align-self-start {
+  align-self: flex-start;
+}
+
+.align-self-end {
+  align-self: flex-end;
+}
+
+.align-self-center {
+  align-self: center;
+}
+
+.align-self-auto {
+  align-self: auto;
+}
+
+.align-self-stretch {
+  align-self: stretch;
+}
+
+.align-self-baseline {
+  align-self: baseline;
+}
+
+/* Flex basis */
+
+.flex-100 {
+  flex: 0 1 100%;
+}
+
+.flex-80 {
+  flex: 0 1 80%;
+}
+
+.flex-75 {
+  flex: 0 1 75%;
+}
+
+.flex-70 {
+  flex: 0 1 70%;
+}
+
+.flex-69 {
+  flex: 0 1 69%;
+}
+
+.flex-60 {
+  flex: 0 1 60%;
+}
+
+.flex-59 {
+  flex: 0 1 59%;
+}
+
+.flex-50 {
+  flex: 0 1 50%;
+}
+
+.flex-48 {
+  flex: 0 1 48%;
+}
+
+.flex-40 {
+  flex: 0 1 40%;
+}
+
+.flex-32 {
+  flex: 0 1 32%;
+}
+
+.flex-30 {
+  flex: 0 1 30%;
+}
+
+.flex-25 {
+  flex: 0 1 25%;
+}
+
+.flex-20 {
+  flex: 0 1 20%;
+}
+
+/* Global Styles */
+
+/* General */
+html {
+  font-size: 16px;
+}
+
+body {
+  font-size: 1.125rem;
+  font-family: "Nunito", sans-serif;
+}
+
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+}
+
+/* Container */
+.container{
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* Anchor Decoration */
+a {
+  text-decoration: none;
+}
+
+/* Image Adjust */
+.full-width {
+  width: 100%;
+  object-fit: cover;
+}
+
+
+/* Positions */
+.position-absolute{
+    position: absolute;
+}
+
+.position-relative{
+    position: relative;
+}
+
+.position-fixed{
+    position: fixed;
+}
+
+.position-sticky{
+    position: sticky;
+}
+
+.z-index-100{
+    z-index: 100;
+}
+
+.z-index-50{
+    z-index: 50;
+}
+
+.z-index-10{
+    z-index: 10;
+}
+
+.z-index-1{
+    z-index: 1;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0.35rem 1rem;
+  border-radius: 0.2rem;
+  box-sizing: border-box;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
